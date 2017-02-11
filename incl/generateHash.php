@@ -1,7 +1,7 @@
 <?php
 //credits to pavlukivan for decoding and to IAD for most of genSolo
 class generateHash {
-	public function genMulti($lvlsmultistring) {
+	public function genMultiplayer($lvlsmultistring) {
 		$lvlsarray = explode(",", $lvlsmultistring);
 		include "connection.php";
 		$hash = "";
@@ -14,7 +14,7 @@ class generateHash {
 		}
 		return sha1($hash . "xI25fpAapCQg");
 	}
-	public function genSolo($lvlsmultistring) {
+	public function genSoloMan($lvlsmultistring) {
 		include "connection.php";
 		$levelstring = $lvlsmultistring;
 		$hash = "aaaaa";
@@ -28,16 +28,16 @@ class generateHash {
 		}
 		return sha1($hash . "xI25fpAapCQg");
 	}
-	public function genSolo2($lvlsmultistring) {
+	public function genSolo2Bad4Me($lvlsmultistring) {
 		return sha1($lvlsmultistring . "xI25fpAapCQg");
 	}
-	public function genSolo3($lvlsmultistring) {
+	public function genSolo3Hard5Me($lvlsmultistring) {
 		return sha1($lvlsmultistring . "oC36fpYaPtdg");
 	}
-	public function genSolo4($lvlsmultistring){
+	public function genSolo4ValentinesDay($lvlsmultistring){
 		return sha1($lvlsmultistring . "pC26fpYaQCtg");
 	}
-	public function genPack($lvlsmultistring) {
+	public function genSixPack($lvlsmultistring) {
 		$lvlsarray = explode(",", $lvlsmultistring);
 		include "connection.php";
 		$hash = "";
